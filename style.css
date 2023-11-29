@@ -1,0 +1,136 @@
+.active{
+    background-color: rgba(236, 101, 90, 1) !important;
+    border-radius: 6px;
+}
+.nav-link{
+    color: black !important;
+}
+.active .nav-link{
+    color: white !important;
+}
+
+.card-header{
+    display: flex;
+    background-color: white !important;
+    justify-content: center;
+}
+.radio{
+    cursor: pointer;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    background-color: aliceblue;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: white;
+}
+.logo__img{
+    width: 100%;
+    height: 100%;
+}
+.accordion-button{
+    color: rgba(236, 101, 90, 1) !important;
+}
+.button-form{
+    padding-top: 10px;
+    border-radius: 6px;
+    padding-bottom: 10px;
+    background-color: rgba(236, 101, 90, 1);
+    border: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+.button-form__text{
+    color: white;
+    text-align: center;
+}
+
+.container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.fit-image{
+    width: 40px;
+}
+
+.invalid-feedback{
+    margin-top: 3px !important;
+}
+.form-select{
+    height: 60px;
+}
+.activeInput{
+    display: none !important;
+}
+.card{
+    border-radius: 6px !important;
+}
+.alert{
+    display: flex !important;
+    position: absolute !important;
+    bottom: 20px;
+    right: 20px;
+}
+.alert-success{
+    background-color: #3caa3c !important;
+    color: white !important;
+}
+.alert-img{
+    width: 40px;
+    margin-right: 10px;
+}
+.disabledMessage{
+    display: none !important;
+}
+
+
+
+@media (max-width: 500px) {
+    .fit-image{
+    width: 30px;
+    }
+    .nav-link  {
+        font-size: 13px !important;
+    }
+    .row>*{
+        padding: 0 !important;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .card{
+        border: none !important;
+    }
+    label, .form-select{
+        font-size: 13px !important;
+    }
+    .alert-text{
+        font-size: 14px ;
+    }
+    .alert-img{
+        width: 35px;
+    }
+    .alert{
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+@media (max-width: 410px) {
+    .nav{
+        flex-direction: column;
+    }
+ 
+    .radio{
+        padding: 10;
+    }
+}

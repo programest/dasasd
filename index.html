@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="[defaultCss].css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        
+       
+            <div class="row">
+                <div class="col-lg-8 col-12 mx-auto">
+                    <div class="card ">
+                        <form  class="form-card needs-validation" novalidate>
+                            <div class="card-header d-flex flex-column align-items-center">
+                                <div class="logo">
+                                    <img src="/img/oi-qaragai-logo-main-test2.5195a94.svg" alt="" class="logo__img">
+                                </div>
+                                <div class="col-lg-8 mx-auto text-center mb-3">
+                                    <h1 class="display-6" id="titleText">Заявка в IT-отдел</h1>
+                                </div>
+                               
+                               
+                                
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <ul role="tablist" class=" col-12 nav  d-flex justify-content-between mb-3 radio-group">
+                                        <li class="col mb-mb-0 mb-3">
+                                            <div class='radio mx-auto active d-flex align-items-center justify-content-center ' data-value-tab="IT"> 
+                                                <img class="fit-image" src="/img/it.svg" >
+                                                <p  class="nav-link  ">IT-отдел </p> 
+                                            </div>                                
+                                        </li>
+                                        <li class="col">
+                                            <div class='radio d-flex align-items-center justify-content-center' data-value-tab="Cleaning"> 
+                                                <img class="fit-image" src="/img/cleaning.svg">
+                                                <p  class="nav-link  ">Отдел уборки</p> 
+                                            </div>                                
+                                        </li>
+                                        
+                                    
+                                    </ul>
+                                </div> 
+                                
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control form-input" data-otel-input id="otel" placeholder="420" required>
+                                  <label for="otel">Номер отеля</label>
+                                  <div class="invalid-feedback">
+                                    Введите  номер отеля
+                                  </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control form-input" data-tel-input id="phone" placeholder="+7(777) 777 77 77" required>
+                                  <label for="phone">Номер телефона</label>
+                                  <div class="invalid-feedback">
+                                    Введите  номер телефона
+                                  </div>
+                                </div>
+                                <div class="mb-4 form-input " id="select">
+                                    <select class="form-select "  required>
+                                        <option class="option-text" selected disabled data-bs-ignore value="">Причина обращения</option>
+                                        <option class="option-text"value="tv">Теливизор</option>
+                                        <option class="option-text"value="phone">Телефон</option>
+                                        <option class="option-text"value="wifi">Wi-Fi</option>
+                                        <option class="option-text"value="other">Другое</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                   Укажите причину обращения
+                                    </div>
+                                </div>
+                                  <button class=" button-form "  type="submit">
+                                    <p class="button-form__text">Отправить</p>
+                                  </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-success  align-items-center disabledMessage" id="message" role="alert">
+                <img src="/img/correct.svg" alt=""  class="alert-img">
+                
+                <p class="alert-text">Заявка успешно отправлена, в ближайшее время с вами свяжется сотрудник OI-Qaragai</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
